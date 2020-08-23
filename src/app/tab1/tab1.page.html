@@ -1,0 +1,83 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>
+        <ion-card [button]="true" [routerLink]="['/sentiments', 'value']" routerDirection="forward">
+          <ion-card-header>
+            <ion-card-title>Sentiments</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Je vais communiquer sur ce que je ressens.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card [button]="true">
+          <ion-card-header>
+            <ion-card-title>Besoins</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Je vais communiquer sur ce que j'ai besoin d'avoir, de faire, de manger, de boire... 
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+  
+    <ion-row>
+      <ion-col>
+        <ion-card [button]="true">
+          <ion-card-header>
+            <ion-card-title>Activités Extérieures</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Je vais communiquer sur les activités en dehors de chez moi.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card [button]="true">
+          <ion-card-header>
+            <ion-card-title>Activités à la maison</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Je vais communiquer sur les activités à la maison (dedans).
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col>
+        <ion-card [button]="true" [routerLink]="['/personnes', 'value']" routerDirection="forward">
+          <ion-card-header>
+            <ion-card-title>Personnes (Famille)</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Je vais communiquer sur ma famille et mes proches.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card [button]="true">
+          <ion-card-header>
+            <ion-card-title>Autres..</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Edit mode.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content>
