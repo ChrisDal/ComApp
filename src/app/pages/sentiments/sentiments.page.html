@@ -21,7 +21,7 @@
     </ion-segment-button>
     <ion-segment-button value="2" layout="icon-bottom">
       <ion-avatar>
-        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        <img size="small" src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
       </ion-avatar>
       <ion-label>Papa</ion-label>
     </ion-segment-button>
@@ -45,17 +45,17 @@
   <ion-label> <h1>Verbe</h1></ion-label>
 </ion-list-header>
 <ion-content id="bar">
-  <ion-segment (ionChange)="segmentChanged($event)" [scrollable]="true" color="secondary">
+  <ion-segment (ionChange)="segmentChanged($event)" [scrollable]="false" color="secondary">
     <ion-segment-button value="21" layout="icon-bottom">
-      <ion-icon size="large" name="heart-outline"></ion-icon>
+      <ion-icon size="medium" name="heart-outline"></ion-icon>
       <ion-label>Ressentir/Être</ion-label>
     </ion-segment-button>
     <ion-segment-button value="22" layout="icon-bottom">
-      <ion-icon  size="large" name="heart-dislike-outline"></ion-icon>
+      <ion-icon  size="medium" name="heart-dislike-outline"></ion-icon>
       <ion-label>N'aime Pas</ion-label>
     </ion-segment-button>
     <ion-segment-button value="23" layout="icon-bottom">
-      <ion-icon size="large" name="add-circle-outline"></ion-icon>
+      <ion-icon size="medium" name="add-circle-outline"></ion-icon>
       <ion-label>Vouloir</ion-label>
     </ion-segment-button>
   </ion-segment>
@@ -71,27 +71,27 @@
     <!-- Icon bottom -->
     <ion-segment (ionChange)="segmentChanged($event)" [scrollable]="true" color="secondary">
       <ion-segment-button value="31" layout="icon-bottom">
-        <ion-icon  size="large" name="person-remove-outline"></ion-icon>
+        <ion-icon  size="medium" name="person-remove-outline"></ion-icon>
         <ion-label>Frustré</ion-label>
       </ion-segment-button>
       <ion-segment-button value="32" layout="icon-bottom">
-        <ion-icon  size="large" name="heart-circle"></ion-icon>
+        <ion-icon  size="medium" name="heart-circle"></ion-icon>
         <ion-label>Amour</ion-label>
       </ion-segment-button>
       <ion-segment-button value="33" layout="icon-bottom">
-        <ion-icon size="large" name="happy-outline"></ion-icon>
+        <ion-icon size="medium" name="happy-outline"></ion-icon>
         <ion-label>Content</ion-label>
       </ion-segment-button>
       <ion-segment-button value="34" layout="icon-bottom">
-        <ion-icon size="large" name="flash-outline"></ion-icon>
+        <ion-icon size="medium" name="flash-outline"></ion-icon>
         <ion-label>Faché</ion-label>
       </ion-segment-button>
       <ion-segment-button value="35" layout="icon-bottom">
-        <ion-icon  size="large" name="battery-dead-outline"></ion-icon>
+        <ion-icon  size="medium" name="battery-dead-outline"></ion-icon>
         <ion-label>Fatigué</ion-label>
       </ion-segment-button>
       <ion-segment-button value="36" layout="icon-bottom">
-        <ion-icon size="large" name="sad-outline"></ion-icon>
+        <ion-icon size="medium" name="sad-outline"></ion-icon>
         <ion-label>Triste</ion-label>
       </ion-segment-button>
     </ion-segment>
@@ -101,7 +101,7 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-button color="success" [routerLink]="['/tabs/tab1']" routerDirection="backward" expand="full">
+    <ion-button color="success" (click)="presentPopover()" expand="full">
       Valider
     </ion-button>
   </ion-toolbar>
